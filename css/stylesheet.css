@@ -657,6 +657,7 @@ p {
     .cards-images-container {
         position: relative;
         overflow: hidden;
+        
     }
 
     .card-description {
