@@ -614,7 +614,6 @@ p {
         border: 1px solid #e7e9fc;
         border-radius: 4px;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
-        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
     }
 
     .portfolio-filters:hover,
@@ -641,6 +640,7 @@ p {
 
     .cards-link {
         display: block;
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
     }
 
     .cards-link:hover,
@@ -650,13 +650,41 @@ p {
 
     .cards-option {
         flex-basis: calc((100% - 48px) / 3);
+        position: relative;
+        overflow: hidden;
     }
 
     .cards-images-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card-description {
+        position: absolute;
+        top: 0;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #f4f4f4fd;
+        padding: 40px 32px;
+        background-color: #4d5ae5;
+        height: 100%;
+        width: 100%;
+        transform: translateY(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .cards-link:hover .card-description,
+    .cards-link:focus .card-description {
+        transform: translateY(0%);
+}
+
+    .cards-text-container {
         border: 1px solid #e7e9fc;
         border-top: none;
         margin-bottom: 8px;
         padding: 32px 16px;
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .cards-images {
