@@ -109,12 +109,17 @@ p {
     width: 100%;
     height: 4px;
     top: 20px;
-    background-color: var(--hover-focus-navigation-menu);
-    /*position: absolute;*/
     left: 0;
     bottom: -1px;
     height: 4px;
     border-radius: 2px;
+    position: absolute;
+    background: var(--hover-focus-navigation-menu);
+}
+
+.nav-studio {
+    background-color: var(--hover-focus-navigation-menu);
+    position: relative;
 }
 
 
