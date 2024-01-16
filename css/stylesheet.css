@@ -103,8 +103,7 @@ p {
     letter-spacing: 0.02em;
 }
 
-.nav-link-active::after{
-    display: block;
+.nav-studio::after{
     content: ""; 
     width: 100%;
     height: 4px;
