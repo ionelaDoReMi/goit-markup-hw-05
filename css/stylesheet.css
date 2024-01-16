@@ -657,7 +657,7 @@ p {
     .cards-images-container {
         position: relative;
         overflow: hidden;
-        
+
     }
 
     .card-description {
@@ -666,7 +666,7 @@ p {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #f4f4f4fd;
+        color: var(--light-color-logo-and-description);
         padding: 40px 32px;
         background-color: #4d5ae5;
         height: 100%;
