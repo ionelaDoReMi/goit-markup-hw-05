@@ -110,7 +110,7 @@ p {
     height: 4px;
     top: 20px;
     background-color: var(--hover-focus-navigation-menu);
-    position: absolute;
+    /*position: absolute;*/
     left: 0;
     bottom: -1px;
     height: 4px;
@@ -152,10 +152,8 @@ p {
     margin-bottom: 16px;
 }
 
-.logo-link-transition {
+.adress-link-transition {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: #404bbf;
-    position: relative;
 }
 
 .logo-link-second-part-header {
